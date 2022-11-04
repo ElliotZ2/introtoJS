@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style></style>
+    <script>
+        function initialize() {
+
+        }
+        function addAndDisplay() {
+            total = parseInt(document.getElementById("num1").value);
+            total += parseInt(document.getElementById("num2").value);
+            console.log(total);
+            document.getElementById("total").innerHTML = "total: " + total;
+        }
+    </script>
+</head>
+<body onload="initialize();">
+    <p>num1:</p>
+    <input id="num1" type="number">
+    <p>num2:</p>
+    <input id="num2" type="number">
+    <button onclick = "addAndDisplay();">Add the 2 numbers</button>
+    <p id="total">s</p>
+</body>
+</html>
